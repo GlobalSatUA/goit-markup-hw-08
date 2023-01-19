@@ -1,0 +1,172 @@
+.form-field {
+
+    &__label {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        display: block;
+        margin-bottom: 3px;
+        color: var( --colour-background);
+    }
+    
+    &__input {
+        width: 100%;
+        height: 40px;
+        padding-left: 42px;
+        padding-right: 12px;
+        border: 1px solid var(--form-color);
+        border-radius: 4px;
+        outline: none;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            fill: var(--color-button);
+            border-color: var(--color-button);
+        }
+
+        &:focus {
+            border-color: var(--color-button);
+        }
+    }
+    
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        border: 1px solid var(--form-color);
+        border-radius: 4px;
+        outline: none;
+        margin-bottom: 20px;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        resize: none;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+        
+        &:hover {
+            border-color: var(--color-button);
+        }
+        
+        &:focus {
+            border-color: var(--color-button);
+        }
+    }
+
+    &__control {
+        position: relative;
+        margin-bottom: 9px;
+    }
+    
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        fill: var(--color-primary);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__submit {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        color: var(--color-white);
+        cursor: pointer;
+        background-color: var(--color-button);
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px var(--modal-color-three);
+        border-color: transparent;
+        padding: 10px 52px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        margin: 0 84px;
+
+        @media (max-width: 479px) {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1200px) {
+            margin: 0 124px;
+        }
+
+        &:hover {
+            background-color: var(--head-button)
+        }
+        
+        &:focus {
+            background-color: var(--head-button)
+        }
+    }
+
+    &__checkbox {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        @media (min-width: 1200px) {
+            margin-left: 20px;
+        }
+    }
+    
+    &__checkbox-input {
+        appearance: none;
+    }
+    
+    &__checkbox-icon {
+        border: 2px solid var(--color-primary);
+        border-radius: 2px;
+        fill: transparent;
+        background-color: var(--color-white);
+        margin-right: 8.3px;
+        position: absolute;
+    }
+    
+    &__checkbox-label {
+        position: relative;
+        padding-left: 24px;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--colour-background);
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+    }
+
+    &__input:hover + &__icon {
+        fill: var(--color-button);
+    }
+    
+    &__input:focus + &__icon {
+        fill: var(--color-button);
+    }
+    
+    &__checkbox-input:checked + &__checkbox-icon {
+        fill: var(--color-white);
+        background-color: var(--color-button);
+        border-color: var(--color-button);
+    }
+}
+
+
+
+
+
+
+

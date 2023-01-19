@@ -1,0 +1,137 @@
+.benefits {
+    background-color: var(--color-white);
+
+    &__item {
+        margin-bottom: 30px;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (min-width:768px) {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            width: 354px;
+        }
+
+    }
+
+    &__list {
+        display: block;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 29px;
+        }
+
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 29px;
+        }
+    }
+    
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media (min-width:768px) {
+            text-align: start;
+        }
+    }
+    
+    &__info {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--colour-background);
+    }
+    
+    &__underhead-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+    
+    &__images-list {
+        display: flex;
+        position: relative;
+        gap: 30px;
+    }
+    
+    &__help-img {
+        position: relative;
+    }
+    
+    &__text-preimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 370px;
+        height: 70px;
+        background-color: var(--preimg-color);
+    }
+    
+    &__img-preground {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--color-white);
+    }
+    
+    &__back-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        width: 450px;
+        height: 120px;
+        background-color: var(--other-button);
+        margin-bottom: 30px;
+
+        @media (max-width: 479px) {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            width: 354px;
+            height: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 270px;
+            height: 120px;
+        }
+    
+    }
+}
+    
+.engagement.section {
+    display: none;
+    padding-top: 0;
+    background-color: var(--color-white);
+
+    @media (min-width:1200px) {
+        display: block;
+    }
+
+}
+

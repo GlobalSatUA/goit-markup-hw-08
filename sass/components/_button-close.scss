@@ -1,0 +1,26 @@
+.button-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    max-width: 30px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
+    background-color: var(--color-white);
+    border: 1px solid var(--close-border);
+    cursor: pointer;
+    fill: var(--color-black);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        fill: var(--color-button);
+    }
+    
+    &:focus {
+        fill: var(--color-button);
+    }
+}
+

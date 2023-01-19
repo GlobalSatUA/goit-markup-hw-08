@@ -1,0 +1,61 @@
+.portfolio {
+    background-color: var(--color-white);
+
+    &__nav {
+        display: flex;
+        gap: 8px;
+        row-gap: 15px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        @media (min-width: 768px) {
+            
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    }
+    
+    &__button {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;    
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        border-radius: 4px;
+        border-color: transparent;
+        background-color: var(--other-button);
+        padding: 6px 20px;
+        transition-property: background-color, color, box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-button);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        
+        &:focus-visible {
+            color: var(--color-white);
+            background-color: var(--color-button);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    &__example-list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+
+
+
+
+
+
